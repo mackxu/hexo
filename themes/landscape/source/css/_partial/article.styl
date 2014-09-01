@@ -79,9 +79,14 @@
     padding: 10px 0
   blockquote
     font-family: font-serif
-    font-size: 1.4em
     margin: line-height 20px
-    text-align: center
+    position: relative
+    &:after
+      content: "\039"
+      position: absolute
+      left: 0
+      top: 0
+      font-size: 1.6em
     footer
       font-size: font-size
       margin: line-height 0
